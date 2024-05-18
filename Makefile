@@ -44,6 +44,7 @@ DATA		:=	data
 INCLUDES	:=	include
 ROMFS	:=	resources
 
+APP_NAME := "Breakout"
 APP_AUTHOR := "Jtag"
 ICON := icon.jpg
 
