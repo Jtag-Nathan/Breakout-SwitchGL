@@ -37,15 +37,16 @@ include $(DEVKITPRO)/libnx/switch_rules
 #   of a homebrew executable (.nro). This is intended to be used for sysmodules.
 #   NACP building is skipped as well.
 #---------------------------------------------------------------------------------
-TARGET		:=	$(notdir $(CURDIR))
+APP_NAME := "Breakout"
+APP_AUTHOR := "Jtag"
+
+TARGET      := $(if $(APP_NAME),$(APP_NAME),$(notdir $(CURDIR)))
 BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS	:=	resources
 
-APP_NAME := "Breakout"
-APP_AUTHOR := "Jtag"
 ICON := icon.jpg
 
 #---------------------------------------------------------------------------------
